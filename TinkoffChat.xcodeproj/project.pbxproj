@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		AF4BF55E2514DE3000160419 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4BF55D2514DE3000160419 /* AppDelegate.swift */; };
 		AF4BF5622514DE3000160419 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4BF5612514DE3000160419 /* ViewController.swift */; };
-		AF4BF5652514DE3000160419 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF4BF5632514DE3000160419 /* Main.storyboard */; };
 		AF4BF5672514DE3200160419 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF4BF5662514DE3200160419 /* Assets.xcassets */; };
 		AF4BF56A2514DE3200160419 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF4BF5682514DE3200160419 /* LaunchScreen.storyboard */; };
 		AF4BF5762514E37900160419 /* messenger.svg in Resources */ = {isa = PBXBuildFile; fileRef = AF4BF5752514E37900160419 /* messenger.svg */; };
+		AF4BF5782514F83700160419 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4BF5772514F83700160419 /* ProfileViewController.swift */; };
+		AF4EFDA2251A9DA800F2EBC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF4EFDA1251A9DA800F2EBC5 /* Main.storyboard */; };
+		AF4EFDA9251AB00500F2EBC5 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AF4EFDA8251AB00500F2EBC5 /* Roboto-Bold.ttf */; };
+		AF4EFDAB251AB1BB00F2EBC5 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AF4EFDAA251AB1BB00F2EBC5 /* Roboto-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AF4BF55A2514DE3000160419 /* TinkoffChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinkoffChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF4BF55D2514DE3000160419 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF4BF5612514DE3000160419 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AF4BF5642514DE3000160419 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AF4BF5662514DE3200160419 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF4BF5692514DE3200160419 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF4BF56B2514DE3200160419 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF4BF5752514E37900160419 /* messenger.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = messenger.svg; sourceTree = "<group>"; };
+		AF4BF5772514F83700160419 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		AF4EFDA1251A9DA800F2EBC5 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		AF4EFDA8251AB00500F2EBC5 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		AF4EFDAA251AB1BB00F2EBC5 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +74,7 @@
 		AF4BF5712514DEAE00160419 /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				AF4EFDA3251AAE4300F2EBC5 /* fonts */,
 				AF4BF5752514E37900160419 /* messenger.svg */,
 				AF4BF5662514DE3200160419 /* Assets.xcassets */,
 			);
@@ -86,7 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				AF4BF5682514DE3200160419 /* LaunchScreen.storyboard */,
-				AF4BF5632514DE3000160419 /* Main.storyboard */,
+				AF4EFDA1251A9DA800F2EBC5 /* Main.storyboard */,
 			);
 			path = storyboards;
 			sourceTree = "<group>";
@@ -95,8 +102,18 @@
 			isa = PBXGroup;
 			children = (
 				AF4BF5612514DE3000160419 /* ViewController.swift */,
+				AF4BF5772514F83700160419 /* ProfileViewController.swift */,
 			);
 			path = classes;
+			sourceTree = "<group>";
+		};
+		AF4EFDA3251AAE4300F2EBC5 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				AF4EFDAA251AB1BB00F2EBC5 /* Roboto-Regular.ttf */,
+				AF4EFDA8251AB00500F2EBC5 /* Roboto-Bold.ttf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,10 +174,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF4EFDAB251AB1BB00F2EBC5 /* Roboto-Regular.ttf in Resources */,
 				AF4BF5762514E37900160419 /* messenger.svg in Resources */,
 				AF4BF56A2514DE3200160419 /* LaunchScreen.storyboard in Resources */,
+				AF4EFDA9251AB00500F2EBC5 /* Roboto-Bold.ttf in Resources */,
 				AF4BF5672514DE3200160419 /* Assets.xcassets in Resources */,
-				AF4BF5652514DE3000160419 /* Main.storyboard in Resources */,
+				AF4EFDA2251A9DA800F2EBC5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,6 +190,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF4BF5782514F83700160419 /* ProfileViewController.swift in Sources */,
 				AF4BF5622514DE3000160419 /* ViewController.swift in Sources */,
 				AF4BF55E2514DE3000160419 /* AppDelegate.swift in Sources */,
 			);
@@ -179,14 +199,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		AF4BF5632514DE3000160419 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AF4BF5642514DE3000160419 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		AF4BF5682514DE3200160419 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -317,6 +329,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M3QWP6KPP5;
 				INFOPLIST_FILE = TinkoffChat/Info.plist;
 				IS_LOGGING = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -335,6 +348,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M3QWP6KPP5;
 				INFOPLIST_FILE = TinkoffChat/Info.plist;
 				IS_LOGGING = NO;
 				LD_RUNPATH_SEARCH_PATHS = (
